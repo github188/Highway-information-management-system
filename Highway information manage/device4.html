@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/html">
+<head >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
+    <title>综合管理系统</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<nav class="navbar navbar-default"><!--将导航添加类 默认样式 导航固定在顶部-->
+    <div  class="container"><!--container-fluid:100%视窗，流媒体的视窗-->
+        <!--小屏幕导航按钮和logo-->
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand">路政信息管理系统</a>
+        </div>
+        <!--小屏幕导航按钮和logo-->
+        <!--导航-->
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;后台首页</a></li>
+                <li><a href="user_list.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;用户管理</a></li>
+                <li><a href="report_forms.html"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;报表管理</a></li>
+                <li class="active"><a href="device.html"><span class="glyphicon glyphicon-tags"></span>&nbsp;&nbsp;设备管理</a></li>
+                <li><a href="Vehicle_management.html"><span class="glyphicon glyphicon-tags"></span>&nbsp;&nbsp;车辆黑名单</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        admin
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+                        <li><a href="index.html"><span class="glyphicon glyphicon-screenshot"></span>&nbsp;&nbsp;前台首页</a></li>
+                        <li><a href="index.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;个人主页</a></li>
+                        <li><a href="index.html"><span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;个人设置</a></li>
+                        <li><a href="index.html"><span class="glyphicon glyphicon-credit-card"></span>&nbsp;&nbsp;账户中心</a></li>
+                        <li><a href="index.html"><span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;我的收藏</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">退出</a></li>
+            </ul>
+        </div>
+        <!--导航-->
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="list-group">
+                <a href="device.html"  class="list-group-item">银川片区监控设备</a>
+                <a href="device1.html"  class="list-group-item">中宁片区监控设备</a>
+                <a href="device2.html"  class="list-group-item">固原片区监控设备</a>
+                <a href="device3.html"  class="list-group-item">石嘴山片区监控设备</a>
+                <a href="device4.html"  class="list-group-item active">吴忠片区监控设备</a>
+                <a href="device5.html"  class="list-group-item">宁夏干线公路监控设备</a>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <div class="page-header">
+                <h1>设备管理</h1>
+            </div>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>片区</th>
+                    <th>收费站</th>
+                    <th>摄像机</th>
+                    <th>设备厂家</th>
+                    <th>视频地址</th>
+                    <th>视频端口</th>
+                    <th>控制地址</th>
+                    <th>控制端口</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>吴忠片区</td>
+                    <td>惠农主线</td>
+                    <td>摄像机HT1</td>
+                    <td>A8</td>
+                    <td></td>
+                    <td></td>
+                    <td>127.0.0.1</td>
+                    <td>8080</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>吴忠片区</td>
+                    <td>石嘴山</td>
+                    <td>摄像机SZS</td>
+                    <td>大华</td>
+                    <td></td>
+                    <td></td>
+                    <td>127.23.21.32</td>
+                    <td>37777</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>吴忠片区</td>
+                    <td>临河</td>
+                    <td>摄像机YH</td>
+                    <td>海康</td>
+                    <td></td>
+                    <td></td>
+                    <td>230.32.23.12</td>
+                    <td>8000</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>吴忠片区</td>
+                    <td>临东</td>
+                    <td>摄像机ND</td>
+                    <td>大华</td>
+                    <td></td>
+                    <td></td>
+                    <td>202.23.0.1</td>
+                    <td>8080</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>吴忠片区</td>
+                    <td>临东</td>
+                    <td>摄像机ND</td>
+                    <td>海康</td>
+                    <td></td>
+                    <td></td>
+                    <td>202.23.10.1</td>
+                    <td>8080</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>吴忠片区</td>
+                    <td>惠农主线</td>
+                    <td>摄像机HT1</td>
+                    <td>A8</td>
+                    <td></td>
+                    <td></td>
+                    <td>127.0.0.1</td>
+                    <td>8080</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>吴忠片区</td>
+                    <td>惠农主线</td>
+                    <td>摄像机HT1</td>
+                    <td>A8</td>
+                    <td></td>
+                    <td></td>
+                    <td>127.0.0.1</td>
+                    <td>8080</td>
+                </tr>
+
+                </tbody>
+            </table>
+            <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#myModal_add">添加</button>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="myModal_add" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="gridSystemModalLabeladd">添加设备</h4>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="">
+                        <p >收费站信息</p>
+                        <div class="row mar">
+                            <div class="col-md-6">
+                                <label>片区：</label>
+                                <select class="form-control">
+                                    <option value="xxx">银川片区</option>
+                                    <option value="xxx">中宁片区</option>
+                                    <option value="xxx">固原片区</option>
+                                    <option value="xxx">石嘴山片</option>
+                                    <option value="xxx">吴忠片区</option>
+                                    <option value="xxx">宁夏干线</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label>收费站/路段：</label>
+                                <select class="form-control">
+                                    <option value="xxx">惠农主线</option>
+                                    <option value="xxx">石嘴山</option>
+                                    <option value="xxx">临河</option>
+                                    <option value="xxx">宁东</option>
+                                    <option value="xxx">灵武主线</option>
+                                    <option value="xxx">宣和</option>
+                                    <option value="xxx">中卫</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="">
+                        <p >摄像机信息</p>
+                        <div class="row mar">
+                            <div class="col-md-6">
+                                <label>摄像机名称：</label>
+                                <input class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label>编码器名称：</label>
+                                <input class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label>摄像机别名：</label>
+                                <input class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label>编码器别名：</label>
+                                <input class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label>摄像机编号：</label>
+                                <input class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label>编码器编号：</label>
+                                <input class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label>控制协议：</label>
+                                <select class="form-control">
+                                    <option value="xxx">AB</option>
+                                    <option value="xxx">xxxx</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label>控制地址：</label>
+                                <input class="form-control">
+                            </div>
+                            <div class="col-md-6"></div>
+                            <div class="col-md-6">
+                                <label>控制端口：</label>
+                                <input class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">保存</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
